@@ -11,7 +11,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Semla</title>
+    <link rel="stylesheet" href="scroll.scss">
+    <title>Wei Tzu Lee</title>
     <link rel="icon" type="image/png" href="./images/mountain.png" />
   </head>
   <body>
@@ -36,19 +37,21 @@
         <div class="container-fluid"></div>
     </nav> -->
     <section id="intro">
-        <div style="margin-left: 50px;">
-            <p class="vertical-text">
-                <span id='Sun' class="week-margin">Sun</span> 
-                <span id='Mon' class="week-margin">Mon</span> 
-                <span id='Tue' class="week-margin">Tue</span> 
-                <span id='Wed' class="week-margin">Wed</span> 
-                <span id='Thur' class="week-margin">Thur</span> 
-                <span id='Fri' class="week-margin">Fri</span> 
-                <span id='Sat' class="week-margin">Sat</span>
-            </p>
-            <p >
-                <span class="line"> </span>
-            </p>
+        <div id="date-container">
+            <div>
+                <p class="vertical-text">
+                    <span id='Sun' class="weekday">Sun</span> 
+                    <span id='Mon' class="weekday">Mon</span> 
+                    <span id='Tue' class="weekday">Tue</span> 
+                    <span id='Wed' class="weekday">Wed</span> 
+                    <span id='Thur' class="weekday">Thur</span> 
+                    <span id='Fri' class="weekday">Fri</span> 
+                    <span id='Sat' class="weekday">Sat</span>
+                </p>
+                <div class="line-container">
+                    <img class="line" src="https://img.icons8.com/ios/50/null/vertical-line.png"/>
+                </div>
+            </div>
             <p class="vertical-text">
                 <span id='date-time'></span> 
             </p>
@@ -62,7 +65,7 @@
                 </div>
                 <div class="col-md-7"></div>
                 <div class="col-md-4 offset-md-1">
-                    <h2 class="bold"> Learn more >> </h2>
+                    <h2 class="bold"> <a class="hover-text" href="#about">Learn more >> </a></h2>
                 </div>
             </div>
 
@@ -70,18 +73,50 @@
         </div>
     </section>
     <!-- Gallery -->
-    
-    <section id="work">
-        <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
-			
-            <div class="col-5">
-                <div class="card card-block card-1"></div>
+    <section id="about">
+        <div class="container">
+            <div class="row justify-content-center protfolio-container">
+                <img class="me" src="./images/ME_1.jpeg">
+            </div>
+            <div class="container-sm protfolio-text-container">
+                <h1 class="diaplay3 bold"> Wei Tzu Lee (Angela)</h1>
+                <h5> I'm a software developer, and passioate in new challenges!
+                     Recently finished my master's degree in information management ar NTU and my exchange semester in Sweden.
+                     Love to enjoy sports, food, reading and innovation technologies.</h5>
             </div>
         </div>
     </section>
+    <section id="work">
+        <div class="container">
+            <div class="row">
+                <div class="scrollable-card-grid">
+                    <div class="scrollable-card">
+                        <div class="card-header">
+                            <h2>Sample text</h2>
+                        </div>
+                        <div class="card-body"></div>
+                    </div>
+                    
+                    <div class="scrollable-card">
+                        <div class="card-header">
+                            <h2>Sample text</h2>
+                        </div>
+                        <div class="card-body"></div>
+                    </div>
 
+                    <div class="scrollable-card">
+                        <div class="card-header">
+                            <h2>Sample text</h2>
+                        </div>
+                        <div class="card-body"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <section id="gallery">
-        <div class="container-fluid ">
+        <div class="container-fluid gallery-bg">
             <div class="row justify-content-center text-center">
                 <h2 class="text-light">Gallery</h2>
                 <p class="text-light">Travel Places for my Trips</p>
@@ -89,14 +124,13 @@
             </div>
             <div class="row justify-content-center align-self-end">
                 <div class="col-lg-2 mb-4 mb-lg-0">
-                <img src="./images/iceland_h.jpg" class="w-100 shadow-1-strong rounded mb-4"/>
-                <img src="./images/strasbourg_v.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape"/>
+                    <img src="./images/iceland_h.jpg" class="w-100 shadow-1-strong rounded mb-4"/>
+                    <img src="./images/strasbourg_v.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape"/>
                 </div>
                 <div class="col-lg-2 mb-4 mb-lg-0">
-                <img src="./images/disney_v.jpg" class="w-100 shadow-1-strong rounded mb-4"/>
-                <img src="./images/ireland_h.jpeg" class="w-100 shadow-1-strong rounded mb-4"/>
-                </div>
-            
+                    <img src="./images/disney_v.jpg" class="w-100 shadow-1-strong rounded mb-4"/>
+                    <img src="./images/ireland_h.jpeg" class="w-100 shadow-1-strong rounded mb-4"/>
+                </div>  
                 <div class="col-lg-2 mb-4 mb-lg-0">
                     <img src="./images/london_h.jpeg" class="w-100 shadow-1-strong rounded mb-4"/>
                     <img src="./images/abisko_v.jpg" class="w-100 shadow-1-strong rounded mb-3"/>
@@ -105,17 +139,16 @@
         </div>
     </section>
     
-    <section id="link"></section>
     
-  <!-- Gallery -->
-    <!-- <div class="puzzle2">
-        <img src="./images/spain.jpeg">
-    </div> -->
-
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script>
         var dt = new Date().toLocaleDateString();
-        document.getElementById('date-time').innerHTML=dt;
+        document.getElementById('date-time').innerHTML=dt.split("").join(" ");
+        var wk = new Date().getDay()
+        weekdays = {1: "Mon", 2:"Tue", 3: "Wed", 4:"Thur", 5:"Fri", 6:"Sat", 7:"Sun"}
+        document.getElementById(weekdays[wk]).classList.add("current")
     </script>
+    
   </body>
 </html>

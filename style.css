@@ -10,40 +10,50 @@ body{
     font-family: 'Dosis', sans-serif;
     overflow-x: hidden;
 }
-h2{
-    margin-bottom: 10px;
-}
 nav{
     background-color: rgba(201, 183, 183, 1);
 }
 section{
-    height: 25%;
+    height: 100vh;
+    position: relative;
 }
 a{
     color: black;
-}
-.week-margin{
-    margin-bottom: 20px;
-}
-.line {
-    border-top: 1px solid black;
-}
-.vertical-text{
-    writing-mode: vertical-lr;
-    text-orientation: sideways;
-    transform: rotate(180deg);
-    margin-bottom: 150%;
-    text-align: right;
+    text-decoration: none;
 }
 #intro{
-   width: 100%;
-   height: 100vh;
-   /* background-image: url('./images/me_h.jpg'); */
-   background-color: rgba(201, 183, 183, 1);
-   /* background-size: cover; */
-   display: flex;
-   align-items: center;
-   padding-right:10vh;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* background-image: url('./images/me_h.jpg'); */
+    background-color: rgba(201, 183, 183, 1);
+    /* background-size: cover; */
+    display: flex;
+    align-items: center;
+    padding-right:10vh;
+}
+#about{
+    background-size: cover;
+    background-image: -webkit-linear-gradient(280deg, rgba(201, 183, 183) 40%, rgba(108, 122, 137) 70%);
+    width: 100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.protfolio-container{
+    margin-top: 7%;
+}
+.protfolio-text-container{
+    margin-top: 4%;
+    width: 800px;
+}
+#work{
+    position: relative;
+    background-color: rgba(210, 215, 211, 1);
+    background-color: rgba(108, 122, 137, 1);
+    width: 100%;
+    height: 100vh;
 }
 #gallery{
     background-image: url('./images/dark_4.jpg');
@@ -56,23 +66,117 @@ a{
     position:absolute;
     gap: 10px;
  }
-.puzzle{
-    height: 10px;
-    width: 10px;
-    position: relative;
-    clip-path: path(var(--puzzle));
+#date-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
-.blue-bg{
-    background-color: rgba(197, 236, 252, 0.5);   
+.weekday{
+    margin-top: 30px;
+}
+.current{
+    font-weight: 700;
+}
+.vertical-text{
+    writing-mode: vertical-lr;
+    text-orientation: sideways;
+    transform: rotate(180deg);
+    text-align: right;
+    margin: auto;
+}
+.line-container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.line {
+    height: 120px;
+    width: 20%;
+    position: relative;
+}
+
+.me{
+    width: 20%;
+    border-radius: 100%;
+    box-shadow: -1px 0 0.2em #fc5504, 
+                1px 0 0.2em #fc5504;
+                
 }
 .bold{
     font-weight: 700;
 }
-.nav-link{
-    color:black;
+
+.hover-text:hover{
+    text-shadow:
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+    cursor: pointer;
+    color: black;
 }
-.space{
-    border-right: 30px;
+.card-title{
+    color: #fff;
+    font-size: 26px;
+    text-align: center;
 }
+.scrollable-card-grid {
+    scrollbar-color: #201c29;
+    scrollbar-width: 10px;
+    scrollbar-gutter: always;
+    padding: 3rem;
+    display: -webkit-box;
+    display: flex;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.scrollable-card {
+    min-width: 300px;
+    min-height: 200px;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background: rgba(191, 191, 191,1);
+    box-shadow: 0rem 0 1rem rgba(238, 238, 238, 1);
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    margin: 0;
+}
+.scrollable-card:hover {
+    -webkit-transform: translateY(-1rem);
+    transform: translateY(-1rem);
+    cursor: pointer;
+}
+.scrollable-card:hover ~ .scrollable-card {
+    -webkit-transform: translateX(150px);
+    transform: translateX(150px);
+}
+.scrollable-card:not(:first-child) {
+    margin-left: -130px;
+}
+.card-header{
+    background-color: transparent;
+    border-bottom: none;
+}
+.card-header h2 {
+    color: #000;
+    font-size: 20px;
+}
+
+
+
+/* .puzzle{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    clip-path: circle(200% at 700% 700%);;
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    clip-path: path(var(--puzzle));
+} */
 
 
