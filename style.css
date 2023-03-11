@@ -94,13 +94,10 @@ a{
     width: 20%;
     position: relative;
 }
-
 .me{
     width: 20%;
     border-radius: 100%;
-    box-shadow: -1px 0 0.2em #fc5504, 
-                1px 0 0.2em #fc5504;
-                
+    box-shadow: -1px 0 0.2em #fc5504, 1px 0 0.2em #fc5504;             
 }
 .bold{
     font-weight: 700;
@@ -137,7 +134,7 @@ a{
     padding: 1.5rem;
     border-radius: 16px;
     background: rgba(191, 191, 191,1);
-    box-shadow: 0rem 0 1rem rgba(238, 238, 238, 1);
+    box-shadow: 0rem 0 0.5rem rgba(238, 238, 238, 1);
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
