@@ -11,9 +11,10 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="scroll.scss">
+    <!-- <link rel="stylesheet" href="scroll.scss"> -->
     <title>Wei Tzu Lee</title>
     <link rel="icon" type="image/png" href="./images/mountain.png" />
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
   </head>
   <body>
     <!-- <nav class="navbar navbar-expand-lg">
@@ -36,111 +37,167 @@
         </div>
         <div class="container-fluid"></div>
     </nav> -->
-    <section id="intro">
-        <div id="date-container">
-            <div>
+        <section id="intro">
+            <div id="date-container">
+                <div>
+                    <p class="vertical-text">
+                        <span id='Sun' class="weekday">Sun</span> 
+                        <span id='Mon' class="weekday">Mon</span> 
+                        <span id='Tue' class="weekday">Tue</span> 
+                        <span id='Wed' class="weekday">Wed</span> 
+                        <span id='Thur' class="weekday">Thur</span> 
+                        <span id='Fri' class="weekday">Fri</span> 
+                        <span id='Sat' class="weekday">Sat</span>
+                    </p>
+                    <div class="line-container">
+                        <img class="line" src="https://img.icons8.com/ios/50/null/vertical-line.png"/>
+                    </div>
+                </div>
                 <p class="vertical-text">
-                    <span id='Sun' class="weekday">Sun</span> 
-                    <span id='Mon' class="weekday">Mon</span> 
-                    <span id='Tue' class="weekday">Tue</span> 
-                    <span id='Wed' class="weekday">Wed</span> 
-                    <span id='Thur' class="weekday">Thur</span> 
-                    <span id='Fri' class="weekday">Fri</span> 
-                    <span id='Sat' class="weekday">Sat</span>
+                    <span id='date-time'></span> 
                 </p>
-                <div class="line-container">
-                    <img class="line" src="https://img.icons8.com/ios/50/null/vertical-line.png"/>
-                </div>
             </div>
-            <p class="vertical-text">
-                <span id='date-time'></span> 
-            </p>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4 offset-md-1 text-left">
-                    <h1 class="display-3 bold"> Hi, </h1>
-                    <h1 class="display-4 bold"> I am Wei Tzu </h1>
-                    <h1 class="display-4 bold"> I am a developer. </h1>
-                </div>
-                <div class="col-md-7"></div>
-                <div class="col-md-4 offset-md-1">
-                    <h2 class="bold"> <a class="hover-text" href="#about">Learn more >> </a></h2>
-                </div>
-            </div>
-
             
-        </div>
-    </section>
-    <!-- Gallery -->
-    <section id="about">
-        <div class="container">
-            <div class="row justify-content-center protfolio-container">
-                <img class="me" src="./images/ME_1.jpeg">
-            </div>
-            <div class="container-sm protfolio-text-container">
-                <h1 class="diaplay3 bold"> Wei Tzu Lee (Angela)</h1>
-                <h5> I'm a software developer, and passioate in new challenges!
-                     Recently finished my master's degree in information management ar NTU and my exchange semester in Sweden.
-                     Love to enjoy sports, food, reading and innovation technologies.</h5>
-            </div>
-        </div>
-    </section>
-    <section id="work">
-        <div class="container">
-            <div class="row">
-                <div class="scrollable-card-grid">
-                    <div class="scrollable-card">
-                        <div class="card-header">
-                            <h2>Sample text</h2>
-                        </div>
-                        <div class="card-body"></div>
-                    </div>
+            <div class="container-fluid">
+                <div class="row">
                     
-                    <div class="scrollable-card">
-                        <div class="card-header">
-                            <h2>Sample text</h2>
-                        </div>
-                        <div class="card-body"></div>
+                    <div class="col-md-4 offset-md-1">
+                            <h1 class="display-3 bold"> Hi, </h1>
+                            <h1 class="display-4 bold"> I am Wei Tzu </h1>
+                        <!-- <model-viewer autoplay ar ar-modes="webxr scene-viewer" src="https://models.readyplayer.me/64116dc0e8584648bb29d1eb.glb" ></model-viewer> -->
+                        <img id="avatar" src="https://models.readyplayer.me/64116dc0e8584648bb29d1eb.png">
                     </div>
+                    <div class="col-md-7 d-flex flex-column">
+                        <div class="d-flex flex-column align-items-end">
+                            <a href="#about"><h1 class="caption-words "> About</h1></a>
+                            <a href="#work"><h1 class="caption-words "> Work</h1></a>
+                            <a href="#contact"><h1 class="caption-words "> Contact</h1></a>
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-4 offset-md-1">
+                        <h2> <a class="hover-text" href="#about">Work</a></h2>
+                    </div> -->
+                </div>
+                <div class="row">
 
-                    <div class="scrollable-card">
-                        <div class="card-header">
-                            <h2>Sample text</h2>
+                </div>
+
+                
+            </div>
+        </section>
+        <!-- Gallery -->
+        <section id="about">
+            <div class="container">
+                <div class="row justify-content-center protfolio-container">
+                    <img class="me" src="./images/ME_1.jpeg">
+                </div>
+                <div class="container-sm protfolio-text-container">
+                    <h1 class="diaplay3 bold"> Wei Tzu Lee (Angela)</h1>
+                    <h5> I'm a software developer, and passioate in new challenges!
+                        Recently finished my master's degree in information management ar NTU and my exchange semester in Sweden.
+                        Love to enjoy sports, food, reading and innovation technologies.</h5>
+                </div>
+            </div>
+        </section>
+
+        <section id="work">
+            <div class="container">
+                <div class="row">
+                    <div class="d-flex text-center justify-content-center">
+                        <h2 class="display-2 section-title bold">WORK</h2>
+                    </div>
+                    <div class="scrollable-card-grid">
+                        <div class="scrollable-card">
+                            <div class="card-header">
+                                <h2>National Taiwan University Master's Degree</h2>
+                            </div>
+                            <div class="card-body">
+                                <p class="bold">Thesis: </p>
+                                <p>Learning logics rules and reasoning on noisy knowledge graphs</p>
+                            </div>
                         </div>
-                        <div class="card-body"></div>
+                        
+                        <div class="scrollable-card">
+                            <div class="card-header">
+                                <h2>National Taiwan University Bachelor's Degree</h2>
+                            </div>
+                            <div class="card-body">
+                                <p class="bold">Project: DeepInsta</p>
+                                <img class="demo-pic" src="./images/DeepInsta.png">
+                            </div>
+                        </div>
+
+                        <div class="scrollable-card">
+                            <div class="card-header">
+                                <h2>Web Design and Develop</h2>
+                            </div>
+                            <div class="card-body">
+                                <p class="bold">Class Project: Bill's Gates</p>
+                                <img class="demo-pic" src="./images/billsgates.png">
+                            </div>
+                        </div>
+                        <div class="scrollable-card">
+                            <div class="card-header">
+                                <h2>LINE Hackathon 2020</h2>
+                            </div>
+                            <div class="card-body">
+                                <p class="bold">LINE Label</p>
+                            </div>
+                        </div>
+                        <div class="scrollable-card">
+                            <div class="card-header">
+                                <h2>Title</h2>
+                            </div>
+                            <div class="card-body">
+                                <p class="bold">Context</p>
+                            </div>
+                        </div>
+                        <div class="scrollable-card">
+                            <div class="card-header">
+                                <h2>Title</h2>
+                            </div>
+                            <div class="card-body">
+                                <p class="bold">Context</p>
+                            </div>
+                        </div>
+                        <div class="scrollable-card">
+                            <div class="card-header">
+                                <h2>Title</h2>
+                            </div>
+                            <div class="card-body">
+                                <p class="bold">Context</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    
-    <section id="gallery">
-        <div class="container-fluid gallery-bg">
-            <div class="row justify-content-center text-center">
-                <h2 class="text-light">Gallery</h2>
-                <p class="text-light">Travel Places for my Trips</p>
-                <p class="text-light">Hey yo! I love traveling, and these are the memory of traveling.</p>
-            </div>
-            <div class="row justify-content-center align-self-end">
-                <div class="col-lg-2 mb-4 mb-lg-0">
-                    <img src="./images/iceland_h.jpg" class="w-100 shadow-1-strong rounded mb-4"/>
-                    <img src="./images/strasbourg_v.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape"/>
+        </section>
+        
+        <section id="gallery">
+            <div class="container-fluid gallery-bg">
+                <div class="row justify-content-center text-center">
+                    <h2 class="text-light">Gallery</h2>
+                    <p></p>
+                    <p class="text-light">Places with Memories</p>
+                    <p class="text-light">Hey! I love traveling, and these are the memory of traveling.</p>
                 </div>
-                <div class="col-lg-2 mb-4 mb-lg-0">
-                    <img src="./images/disney_v.jpg" class="w-100 shadow-1-strong rounded mb-4"/>
-                    <img src="./images/ireland_h.jpeg" class="w-100 shadow-1-strong rounded mb-4"/>
-                </div>  
-                <div class="col-lg-2 mb-4 mb-lg-0">
-                    <img src="./images/london_h.jpeg" class="w-100 shadow-1-strong rounded mb-4"/>
-                    <img src="./images/abisko_v.jpg" class="w-100 shadow-1-strong rounded mb-3"/>
+                <div class="row justify-content-center align-self-end">
+                    <div class="col-lg-2 mb-4 mb-lg-0">
+                        <img src="./images/iceland_h.jpg" class="w-100 shadow-1-strong rounded mb-4"/>
+                        <img src="./images/strasbourg_v.jpg" class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape"/>
+                    </div>
+                    <div class="col-lg-2 mb-4 mb-lg-0">
+                        <img src="./images/disney_v.jpg" class="w-100 shadow-1-strong rounded mb-4"/>
+                        <img src="./images/ireland_h.jpeg" class="w-100 shadow-1-strong rounded mb-4"/>
+                    </div>  
+                    <div class="col-lg-2 mb-4 mb-lg-0">
+                        <img src="./images/london_h.jpeg" class="w-100 shadow-1-strong rounded mb-4"/>
+                        <img src="./images/abisko_v.jpg" class="w-100 shadow-1-strong rounded mb-3"/>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    
-    
-    
+        </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script>
         var dt = new Date().toLocaleDateString();
